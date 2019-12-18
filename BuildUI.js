@@ -1,6 +1,6 @@
 const app = document.getElementById('root')
 function build(data){
-    for(var i=0;i<6;i++){
+    for(var i=0;i<data.length;i++){
         var fname=data[i].name.first;
         var lname=data[i].name.last;
         var em=data[i].email;

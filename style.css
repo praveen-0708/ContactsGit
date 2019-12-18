@@ -1,8 +1,8 @@
 #root{
   padding-left: 110px;
   padding-right: 100px;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  /* display:grid; */
+  /* grid-template-columns: repeat(3,1fr); */
 }
 @media(max-width:1040px){
   #root{
@@ -21,12 +21,13 @@
     border: solid black;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 30px;
-    
+    margin: 10px;
+    display: inline-block;
 }
   
 .card:hover {
     box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.2);
+    
 }
   
 .container {
@@ -78,4 +79,29 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#loader {
+  margin: 20px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  border-bottom: 8px solid #3498db;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left:45%;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
