@@ -1,5 +1,15 @@
 
+const a=document.createElement('h1')
+a.setAttribute('id','header')
+a.textContent="CONTACTS"
+document.body.appendChild(a)
+
+const app = document.createElement('div')
+app.setAttribute('id','root')
+document.body.appendChild(app)
+
 function load(callback) {
+    
     var request = new XMLHttpRequest()
     //url = 'https://reqres.in/api/users?page=' + x
     url='https://randomuser.me/api/?results=100'
@@ -27,3 +37,5 @@ window.onscroll = function() {
         load(mycallback);
     }
 };
+
+module.exports={load,mycallback}
