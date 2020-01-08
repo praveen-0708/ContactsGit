@@ -1,5 +1,5 @@
-const {load,mycallback}=require('./details');
-const {build,addElem}=require('./BuildUI');
+
+const {addElem}=require('./BuildUI');
 
 beforeAll(()=>{
     addElem("abc","def","bgkjabcskjbsak","https://randomuser.me/api/portraits/men/52.jpg")
